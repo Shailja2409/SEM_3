@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 2. Demonstrate different array functions like push, pop, shift, unshift, splice, sort etc… (A) -->
+    <script>
+        document.write("--PUSH--" + "<br/>");
+
+        a = [10,20,30,40,50]; //PUSH
+        a.push(60);
+
+        for(i=0;i<a.length;i++){
+            document.write(a[i] + "<br/>");
+        }
+
+        document.write("--POP--" + "<br/>");
+
+        b = [10,20,30,40,50]; //POP
+        b.pop();
+
+        for(i=0;i<b.length;i++){
+            document.write(b[i] + "<br/>");
+        }
+
+        document.write("--SHIFT--" + "<br/>");
+
+        c = [10,20,30,40,50]; //SHIFT
+        c.shift();
+
+        for(i=0;i<c.length;i++){
+            document.write(c[i] + "<br/>");
+        }
+
+        document.write("--UNSHIFT--" + "<br/>");
+
+        d = [10,20,30,40,50]; //UNSHIFT
+        d.unshift(5);
+
+        for(i=0;i<d.length;i++){
+            document.write(d[i] + "<br/>");
+        }
+
+        document.write("--SPLICE--" + "<br/>");
+
+        e = [10,20,30,40,50]; //SPLICE
+        e.splice(2,1,25);
+
+        for(i=0;i<e.length;i++){
+            document.write(e[i] + "<br/>");
+        }
+
+        document.write("--REVERSE--" + "<br/>");
+        
+        f = [10,20,30,40,50]; //REVERSE
+        f.reverse();
+
+        for(i=0;i<f.length;i++){
+            document.write(f[i] + "<br/>");
+        }
+    </script>
+</body>
+</html>
