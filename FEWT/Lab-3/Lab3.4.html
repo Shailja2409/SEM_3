@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab3.4(Fibonacci Series)</title>
+</head>
+<body>
+    <!-- 4. WAP in JavaScript to print the Fibonacci series of a number. (A) -->
+    <script>
+        n = parseInt(prompt("Enter a number:"));
+
+        a=0,b=1,temp=0
+        let result = " "; // gives error if undefined
+
+            for(i=1;i<=n;i++){
+                result+=a; // sum of consecutive number
+
+                if(i!==n){
+                    result+=',';
+                }
+
+                temp = a+b // gives 3rd element as the 3rd element
+                a = b
+                b = temp
+            }
+            document.write(result);
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab3.3</title>
+</head>
+<body>
+    <!-- 3. WAP in JavaScript to ƒnd the factorial of given number. (A) -->
+    <script>
+        n = parseInt(prompt("Enter a number:"));
+        fact = 1;
+
+        if(n==1){
+            document.write("factorial is zero");
+        }
+        else{
+            for(i=1;i<=n;i++){
+                fact = fact*i;
+            }
+            document.write("factorial is: " +fact);
+        }
+
+    </script>
+</body>
+</html>

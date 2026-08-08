@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<>, initial-scale=1.0">
+    <title>LAb3.1</title>
+</head>
+<body>
+    <!-- 1. WAP in JavaScript to make simple calculator using popup box. (A) -->
+    <script>
+        num1 = parseFloat(prompt("Enter no 1:"));
+        num2 = parseFloat(prompt("Enter no 2:"));
+
+        if(num1>=num2){
+            a = prompt("Enter the operation to be performed(+,-,*,/):");
+
+            if(a = '+'){
+                document.write("Addition of no.: "+(num1+num2));
+            }
+            else if(a = '-'){
+                document.write("Subtraction of no.: "+(num1-num2));
+            }
+            else if(a = '*'){
+                document.write("Multiplication of no.: "+(num1*num2));
+            }
+            else if(a = '/'){
+                document.write("Division of no.: "+(num1/num2));
+            }
+        }
+
+    </script>
+</body>
+</html>
