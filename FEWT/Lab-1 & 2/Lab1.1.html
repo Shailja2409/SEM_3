@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab1.1</title>
+    <style>
+        .colorchange{
+            height: 100px;
+            width: 100px;
+            animation-name: colorchanging;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+
+        .squarebox{
+            height: 100px;
+            width: 100px;
+            background-color: beige;
+            animation-name: move;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            position: relative;
+        }
+
+        .linkbox{
+            background-color: white;
+            margin-top: 100px;
+        }
+
+        @keyframes colorchanging {
+            from{
+                background-color: red;
+            }
+            to{
+                background-color: yellow;
+            }
+        }
+
+        @keyframes move{
+            0%{
+                top: 0px;
+                left: 0px;
+                background-color: aliceblue;
+
+            }
+            25%{
+                top: 0px;
+                left: 100px;
+                background-color: aqua;
+            }
+            50%{
+                top: 100px;
+                left: 100px;
+                background-color: azure;
+            }
+            75%{
+                top: 100px;
+                left: 0px;
+                background-color: bisque;
+            }
+            100%{
+                top: 0px;
+                left: 0px;
+                background-color: blanchedalmond;
+            }
+        }
+
+        #a{
+            color: red;
+        }
+
+        a:visited{
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="colorchange"></div>
+    <div class="squarebox"></div>
+    
+    <div class="linkbox"><a href="https://getbootstrap.com/" id = "link">
+        CLICK HERE</a>
+    </div>
+</body>
+</html>
