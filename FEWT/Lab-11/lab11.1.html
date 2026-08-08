@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11.1</title>
+</head>
+<body>
+    <!-- 1. Demonstrate how to create a class in Java Script. (A) -->
+    <script>
+        class Student{
+            constructor(givenName,giveAge){
+                this.name = givenName;
+                this.age = giveAge;
+            }
+
+            introduce(){
+                document.write("Hello,I am " + this.name + " and I am " + this.age + " years old.")
+            }
+        }
+
+        const student = new Student("Manan" , 20);
+
+        student.introduce();
+    </script>
+    
+</body>
+</html> 

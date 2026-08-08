@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab11.4</title>
+</head>
+<body>
+    <!-- 4. Demonstrate the Array and Object Destructuring. (B) -->
+    <script>
+
+        //object deconstructing
+        stu = {
+                name: "manan",
+                roll: 101,
+                department: "CSE",
+                semester: 3,
+                city: "rajkot",
+                state: "gujarat",
+                country: "INDIA",
+            }
+
+        let {name,roll,department,...otherPro} = stu;
+
+        console.log(otherPro);
+        console.log(name);
+        console.log(department);
+
+
+        //Array deconstructing
+        colors = ["red","green","blue","yellow","pink","black","grey"];
+
+        const [a,b,c,...otherArr] = colors;
+        console.log(a);
+        console.log(b);
+        console.log(c);
+    </script>
+</body>
+</html>
