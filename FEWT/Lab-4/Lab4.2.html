@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab4.2</title>
+</head>
+<body>
+    <!-- 2. WAP in JavaScript to prime number between the given range of number. (A) -->
+    <script>
+        n1 = parseInt(prompt("Enter starting number:"));
+        n2 = parseInt(prompt("Enter ending number:"));
+        
+        for(i=n1;i<n2;i++){
+            if(i==1){
+                document.write("Not Prime");
+            }
+            isPrime = true;
+
+            for(j=2;j<=i/2;j++){
+                if(i%j==0){
+                    isPrime = false;
+                    break;
+                }
+            }
+            
+            if(isPrime){
+                document.write(i + "<br\>");
+            }
+        }
+
+    </script>
+    
+</body>
+</html>

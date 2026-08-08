@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab4.6</title>
+</head>
+<body>
+    <!-- 6. Write an HTML page with JavaScript that takes a number from popup box in the range 0-999 and
+    display it in words. If the number is out of range, it should show “out of range” and if it is not a
+    number ,it should show “not a number” message in the result box. (A) -->
+    <script>
+        n = parseInt(prompt("Enter a number:"));
+
+        if(isNaN(n)){
+            document.write("Is Not a Number");
+        }
+        else if(n<0 || n>999){
+            document.write("Out of Range");
+        }
+        else{
+            ans = "";
+            ones = ["zero","one","two","three","four","five","six","seven","eight","nine","ten","eleven","twelve","thirteen","forteen","fifteen","sixteen","seventeen","eighteen","ninteen"];
+            tens = ["twenty","thirty","forty","fifty","sixty","seventy","eighty","ninty"];
+            hundreds = ["one hundred","two hundred","three hundred","four hundred","five hundred","six hundred","seven hundred","eight hundred","nine hundred"];
+
+            if(n>99){
+                ans += hundreds[parseInt(n/100)-1];
+                n = n%100;
+            }
+
+            if(n>19){
+                ans += tens[parseInt(n/10)-2];
+                n = n%10;
+            }
+
+            if(n>=0){
+                ans += ones[parseInt(n)];
+            }
+
+            document.write(ans);
+        }
+    </script>
+    
+</body>
+</html>

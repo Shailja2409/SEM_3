@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAb4.3.2</title>
+</head>
+<body>
+    <!-- 3.2 WAP to display given patterns using JavaScript. (A) -->
+    <!-- Patterns -->
+
+<!-- 2) 1
+        01
+        101
+        0101 -->
+
+    <script>
+        n = parseInt(prompt("Enter a number:"));
+
+        for(i=1;i<=n;i++){
+            for(j=1;j<=i;j++){
+                if(i%2==0){
+                    if(j%2==0){
+                        document.write("1");
+                    }
+                    else{
+                        document.write("0");
+                    }
+                }
+                else{
+                    if(j%2==0){
+                        document.write("0");
+                    }
+                    else{
+                        document.write("1");
+                    }
+                }
+            }
+            document.write("<br/>");
+        }
+    </script>
+    
+</body>
+</html>

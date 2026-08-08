@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab4.5</title>
+</head>
+<body>
+    <!-- 5. Write a JavaScript to take 2-digit number and then separate these 2 digits, then multiply ƒrst digit
+    by itself for second digit times. (B) -->
+    <script>
+        n = parseInt(prompt("Enter a 2-digit number:"));
+
+        first = Math.floor(n/10);
+        second = n%10;
+        ans = 1;
+
+        for(i=1;i<=second;i++){
+            ans = ans*first;
+        }
+
+        document.write("Answer is " +ans);
+
+    </script>
+    
+</body>
+</html>
