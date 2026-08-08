@@ -1,0 +1,32 @@
+<!-- 2. WAP to recognize which mouse event is ƒired. (A) -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab8.2</title>
+ </head>
+ <body>
+    <button id="mouseevent" onclick="mouseEvent()">Click</button>
+    <h1 id="text">HELLO WORLD</h1>
+    <script>
+        function mouseEvent(){
+            document.getElementById("mouseevent").addEventListener('click',()=>{
+                document.getElementById("text").innerHTML = "ON CLICK"
+            })
+
+            document.getElementById("mouseevent").addEventListener('dblclick',()=>{
+                document.getElementById("text").innerHTML = "DOUBLE CLICK"
+            })
+
+            document.getElementById("mouseevent").addEventListener('mouseup',()=>{
+                document.getElementById("text").innerHTML = "MOUSE UP"
+            })
+
+            document.getElementById("mouseevent").addEventListener('mousedown',()=>{
+                document.getElementById("text").innerHTML = "MOUSE DOWN"
+            })
+        }      
+    </script>
+ </body>
+ </html>

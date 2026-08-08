@@ -1,0 +1,54 @@
+<!-- 6. WAP to prepare student registration form and validate it using JavaScript. (A) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab8.6</title>
+</head>
+<body>
+    <form onsubmit="ValidateForm(event)">
+        <table>
+            <th>Student Registration</th>
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" id="username"></td>
+            </tr>
+
+            <tr>
+                <td>Enrollment no.:</td>
+                <td><input type="number" id="enrollment"></td>
+            </tr>
+
+            <tr>
+                <td>Address:</td>
+                <td><textarea id="add">write address...</textarea></td>
+            </tr>
+
+            <tr>
+                <td>Date of Birth:</td>
+                <td><input type="date" id="dob"></td>
+            </tr>
+
+            <tr>
+                <td>Email ID:</td>
+                <td><input type="email" id="email"></td>
+            </tr>
+        </table>
+        <button type="button">Submit</button>
+    </form>
+
+    <script>
+        function ValidateForm(e){
+            name = document.getElementById("username")
+            enrollment = document.getElementById("enrollment")
+            add = document.getElementById("add")
+            dob = document.getElementById("dob")
+            email = document.getElementById("email")
+
+        }
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!-- 7. WAP to perform CRUD operation on Array using HTML and JavaScript. (C) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab8.7</title>
+</head>
+<body>
+    <input type="text" id="textname">
+
+    <button onclick="createbtn()">CREATE</button>
+    <button onclick="readbtn()">READ</button>
+    <button onclick="updatebtn()">UPDATE</button>
+    <button onclick="deletebtn()">DELETE</button>
+
+    <p id="result"></p>
+    
+    <script>
+        arr = [];
+
+    function createbtn(){
+        name = document.getElementById("textname").value;
+
+        arr.push(name)
+
+        document.getElementById("result").innerHTML = arr;
+        
+    }
+
+    function readbtn(){
+        document.getElementById("result").innerHTML = arr;
+    }
+
+    function updatebtn(){
+        let oldName = prompt("Enter the name to be Updated:");
+        let newName = prompt("Enter New Name:");
+
+        let index = arr.indexOf(oldName);
+
+        if(index != -1){
+            arr[index] = newName;
+        }
+        else{
+            alert("Name Not Found!!");
+        }
+
+        document.getElementById("result").innerHTML = arr;
+
+    }
+
+    function deletebtn(){
+        let name = prompt("Enter name to delete:");
+
+        let index = arr.indexOf(name);
+
+        if(index != -1){
+            arr.splice(index,1);
+        }
+        else{
+            alert("Name Not Found!!");
+        }
+
+        document.getElementById("result").innerHTML = arr;
+    }
+    </script>
+</body>
+</html>
