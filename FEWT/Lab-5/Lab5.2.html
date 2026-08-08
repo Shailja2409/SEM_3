@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab5.2</title>
+</head>
+<body>
+    <!-- 2. WAP to read an array from the user and sort them in ascending order. (A) -->
+    <script>
+        n = parseInt(prompt("Enter a number:"));
+        let temp;
+
+        arr = [];
+
+        for(i=0;i<n;i++){
+            arr[i] = parseInt(prompt("Enter array elements:"));
+        }
+
+        for(i=0;i<n;i++){
+            document.write(arr[i] + "<br/>");
+        }
+
+
+        for(i=0;i<n;i++){
+            for(j=i+1;j<n;j++){
+                if(arr[i]>arr[j]){
+                    temp = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = temp;
+                }
+            }
+        }
+
+        document.write("<hr/>");
+        document.write("Ascending order:" + "<br/>");
+
+        for(i=0;i<n;i++){
+            document.write(arr[i] + "<br/>");
+        }
+
+
+    </script>
+    
+</body>
+</html>
