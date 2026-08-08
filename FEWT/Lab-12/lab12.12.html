@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab12.12</title>
+</head>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@4.0.0/dist/jquery.min.js"></script>
+<body>
+    <!-- 12. write a jQuery program to change background color of all input tags when clicked on a button (A) -->
+    
+    <input id="input1" style="background-color: bisque; margin-bottom: 10px;"/><br>
+    <input id="input2" style="background-color: bisque; margin-bottom: 10px;"/><br>
+    <input id="input3" style="background-color: bisque; margin-bottom: 10px;"/><br>
+
+    <button id="btn">Change Color</button>
+
+    <script>
+        $("#btn").click(()=>{
+            $("#input1").css("background-color","pink")
+        })
+
+        $("#btn").click(()=>{
+            $("#input2").css("background-color","red")
+        })
+
+        $("#btn").click(()=>{
+            $("#input3").css("background-color","blue")
+        })
+    </script>
+</body>
+</html>

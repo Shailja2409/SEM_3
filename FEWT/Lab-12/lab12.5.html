@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab12.5</title>
+</head>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@4.0.0/dist/jquery.min.js"></script>
+<body>
+    <!-- 5. write a jQuery program to append new list item with "Hello World" to existing unordered list
+    when clicked on button. (A) -->
+
+    <ul id="list">
+        <li>Rajkot</li>
+        <li>Surat</li>
+        <li>Vadodara</li>
+    </ul>
+
+    <button id="btn">Add in list</button>
+    
+    <script>
+        $("#btn").click(()=>{
+            $("#list").append("<li>Ahmedabad</li>")
+        })
+    </script>
+    
+</body>
+</html>

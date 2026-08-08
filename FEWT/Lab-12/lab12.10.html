@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab12.10</title>
+</head>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@4.0.0/dist/jquery.min.js"></script>
+<body>
+    <!-- 10. write a jQuery program to hide all elements with class ""myEle"" when clicked on a button. (A) -->
+    
+    <h1 class="myEle">this is h1 tag</h1>
+    <p class="myEle">this is h1 tag</p>
+    <h2 class="myEle">this is h2 tag</h2>
+
+    <button id="hideBtn">Hide</button>
+
+    <script>
+        $("#hideBtn").click(()=>{
+            $(".myEle").hide()
+        })
+    </script>
+
+</body>
+</html>

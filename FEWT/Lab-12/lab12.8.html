@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab12.8</title>
+</head>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@4.0.0/dist/jquery.min.js"></script>
+<body>
+    <!-- 8. write a jQuery to hide all siblings when clicked on a button. (A) -->
+    
+    <ul id="list">
+        <li>Apple</li>
+        <li id="link">Kiwi</li>
+        <li>Orange</li>
+    </ul>
+
+    <button id="btn">Hide</button>
+
+    <script>
+        $("#btn").click(()=>{
+            $("#link").siblings().hide();
+        })
+    </script>
+</body>
+</html>

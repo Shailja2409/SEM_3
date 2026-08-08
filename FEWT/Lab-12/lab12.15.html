@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab12.15</title>
+</head>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@4.0.0/dist/jquery.min.js"></script>
+<body>
+    <!-- 15. write a jQuery program to set background of an element to red when mouse enter on all
+    paragraphs (A) -->
+    
+    <p id="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, optio doloribus! Ut blanditiis necessitatibus quasi fuga</p>
+    <p id="para2">eum est alias dolor error temporibus quisquam. Dolorem beatae, molestias accusantium consequuntur ipsam maxime.</p>
+
+    <script>
+        $("p").mouseenter(()=>{
+          $("#para1").css("background-color","red")  
+        })
+
+        $("p").mouseenter(()=>{
+          $("#para2").css("background-color","red")  
+        })
+    </script>
+</body>
+</html>

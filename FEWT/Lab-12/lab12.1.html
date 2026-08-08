@@ -1,0 +1,31 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab12.1</title>
+</head>
+<body>
+    <!-- 1. write a jQuery to fade object when clicked on it. (A) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@4.0.0/dist/jquery.min.js"></script>
+
+    <h2 id="text">hello world</h2>
+    <button id="out">Click to out</button>
+    <button id="in">Click to in</button>
+    <button id="toggle">Click to toggle</button>
+
+    <script>
+        $("#in").click(()=>{
+            $("#text").fadeIn();
+        })
+        
+        $("out").click(()=>{
+            $("#text").fadeOut();
+        })
+
+        $("#toggle").click(()=>{
+            $("#text").fadeToggle();
+        })
+    </script>
+</body>
+</html>

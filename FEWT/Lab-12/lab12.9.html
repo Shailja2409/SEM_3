@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab12.9</title>
+</head>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@4.0.0/dist/jquery.min.js"></script>
+<body>
+    <!-- 9. write a jQuery program to hide element with id ""myEle"" when clicked on a button (A) -->
+    
+    <p id="myEle">Hide this element</p>
+
+    <button id="myBtn">Hide element</button>
+
+    <script>
+        $("#myBtn").click(()=>{
+            $("#myEle").hide()
+        })
+    </script>
+</body>
+</html>
